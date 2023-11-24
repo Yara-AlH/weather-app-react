@@ -1,0 +1,57 @@
+.weatherApp {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 40px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background-color: rgb(218, 221, 225, 0.2);
+
+  text-shadow: 1px 1px 2px #686abe;
+
+  box-shadow: 4px 6px 25px 25px rgba(0, 0, 0, 0.05);
+}
+
+input {
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+hr {
+  border: none;
+  border-top: 2.5px solid rgb(255, 255, 255);
+}
+
+.search-form {
+  border-radius: 6px;
+  /* border: 1px rgb(218, 221, 225, 0.5) solid; */
+  /* background-color: rgb(255, 255, 255, 0.6); */
+  /* box-shadow: 0px 6px 25px 0px rgba(0, 0, 0, 0.1); */
+  padding: 3px;
+}
+
+.search-form:focus {
+  border: 1px #998ce4 solid;
+  outline: none;
+}
+
+.search-form::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.searchBtn {
+  border-radius: 6px;
+  border: 1px rgb(218, 221, 225, 0.5) solid;
+  color: rgba(0, 0, 0, 0.4);
+  background-color: rgb(255, 255, 255, 0.6);
+  box-shadow: 0px 6px 25px 0px rgba(0, 0, 0, 0.1);
+  padding: 3px;
+}
+
+.searchBtn:hover {
+  background-color: #998ce4;
+  transition: ease-in-out 0.2s;
+  border: 1px #998ce4 solid;
+}

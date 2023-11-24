@@ -1,0 +1,62 @@
+.city {
+  font-size: 45px;
+}
+.country {
+  font-size: 18px;
+}
+
+.lastUpdate {
+  font-size: 18px;
+}
+
+.condition {
+  font-size: 18px;
+}
+
+.geo {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.mainInfo {
+  align-items: center;
+}
+
+.leftDiv {
+  align-items: center;
+}
+
+.rightDiv {
+  align-items: center;
+}
+
+.city {
+  font-weight: 550;
+}
+
+.temperature {
+  text-align: center;
+  font-size: 100px;
+}
+
+.temp {
+  display: inline-flex;
+  align-items: center;
+}
+
+.tempNumebr {
+  margin-right: 10px;
+}
+
+.units {
+  text-align: center;
+  font-size: 20px;
+}
+
+.celcius {
+  font-size: 25px;
+}
+
+.condition::first-letter {
+  text-transform: capitalize;
+}
