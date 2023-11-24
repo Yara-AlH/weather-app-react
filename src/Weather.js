@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
-import Loading from "./Loading";
+import Loader from "./Loader";
 import axios from "axios";
+import Footer from "./Footer";
+
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -65,11 +67,12 @@ export default function Weather(props) {
           </form>
           <WeatherInfo data={weatherData} />
         </div>
+        <Footer />
       </div>
     );
   } else {
     search();
 
-    return <Loading />;
+    return <Loader />;
   }
 }
