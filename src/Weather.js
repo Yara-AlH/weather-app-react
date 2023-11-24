@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import Loading from "./Loading";
 import axios from "axios";
 import "./Weather.css";
 
@@ -22,7 +23,7 @@ export default function Weather(props) {
       description: response.data.condition.description,
       temperature: response.data.temperature.current,
       date: new Date(response.data.time * 1000),
-      // icon: response.condition.icon,
+      icon: response.data.condition.icon,
     });
   }
 
@@ -69,6 +70,6 @@ export default function Weather(props) {
   } else {
     search();
 
-    return "Loading...";
+    return <Loading />;
   }
 }

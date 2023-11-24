@@ -7,14 +7,14 @@ export default function Footer() {
       <div className="footer">
         <span>
           <a
-            href="https://github.com/Yara-AlH/my-weather-app"
+            href="https://github.com/Yara-AlH/weather-app-react"
             target="_blank"
             rel="noreferrer"
             className="openSourceCode"
           >
             Open-source code
           </a>
-          by Yara A. Hawari
+          by Yara Alhawari
         </span>
       </div>
     </div>

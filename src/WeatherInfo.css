@@ -51,10 +51,16 @@
 .units {
   text-align: center;
   font-size: 20px;
+  margin-bottom: 25px;
 }
 
 .celcius {
   font-size: 25px;
+  margin-right: 60px;
+}
+
+.icon {
+  margin-left: 20px;
 }
 
 .condition::first-letter {
