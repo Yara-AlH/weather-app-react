@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import Loader from "./Loader";
 import axios from "axios";
 import Footer from "./Footer";
@@ -17,7 +18,6 @@ export default function Weather(props) {
   }
 
   function displayWeatherInfo(response) {
-    console.log(response);
     setWeatherData({
       ready: true,
       cityName: response.data.city,
@@ -66,6 +66,18 @@ export default function Weather(props) {
             </div>
           </form>
           <WeatherInfo data={weatherData} />
+          <div className="container text-start">
+            <div className="row align-items-start">
+              <div className="col-2 daily" id="daily-tab">
+                Daily
+              </div>
+              <div className="col-2 wind" id="wind-tab">
+                Wind
+              </div>
+            </div>
+          </div>
+          <hr />
+          <WeatherForecast city={weatherData.cityName} />
         </div>
         <Footer />
       </div>
