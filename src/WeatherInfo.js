@@ -25,14 +25,14 @@ export default function WeatherInfo(props) {
         </div>
         <div className="col">
           <div className="card-body default-data rightDiv">
-            <div class="temperature">
-              <div class="temp">
-                <span class="tempNumber">
+            <div className="temperature">
+              <div className="temp">
+                <span className="tempNumber">
                   {Math.round(props.data.temperature)}{" "}
                 </span>
-                <span class="units">
+                <span className="units">
                   <div>
-                    <div class="celcius">°C</div>
+                    <div className="celcius">°C</div>
                     <div className="icon">
                       <WeatherIcon
                         code={props.data.icon}

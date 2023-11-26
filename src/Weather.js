@@ -66,17 +66,7 @@ export default function Weather(props) {
             </div>
           </form>
           <WeatherInfo data={weatherData} />
-          <div className="container text-start">
-            <div className="row align-items-start">
-              <div className="col-2 daily" id="daily-tab">
-                Daily
-              </div>
-              <div className="col-2 wind" id="wind-tab">
-                Wind
-              </div>
-            </div>
-          </div>
-          <hr />
+
           <WeatherForecast city={weatherData.cityName} />
         </div>
         <Footer />
